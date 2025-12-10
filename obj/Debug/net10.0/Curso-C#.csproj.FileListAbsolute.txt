@@ -26,3 +26,4 @@ C:\Users\Monteiro\Documents\Pessoal\DIO\Curso_C-Sharp-DIO\obj\Debug\net10.0\refi
 C:\Users\Monteiro\Documents\Pessoal\DIO\Curso_C-Sharp-DIO\obj\Debug\net10.0\Curso-C#.pdb
 C:\Users\Monteiro\Documents\Pessoal\DIO\Curso_C-Sharp-DIO\obj\Debug\net10.0\Curso-C#.genruntimeconfig.cache
 C:\Users\Monteiro\Documents\Pessoal\DIO\Curso_C-Sharp-DIO\obj\Debug\net10.0\ref\Curso-C#.dll
+C:\Users\Monteiro\Documents\Pessoal\DIO\Curso_C-Sharp-DIO\obj\Debug\net10.0\Curso-C#.sourcelink.json
