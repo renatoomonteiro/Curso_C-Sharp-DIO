@@ -213,3 +213,58 @@ Console.WriteLine($"Após adicionar 5: {numero}");
 
 //Calculando Raiz Quadrada
 calc.RaizQuadrada(9);
+
+
+//Introdução ao FOR
+int numeroFor = 10;
+
+//Console.WriteLine($"{numeroFor} x 1 = {numeroFor * 1}");
+
+for(int contador = 0; contador <= 10; contador++)
+{
+    Console.WriteLine($"{numeroFor} x {contador} = {numeroFor * contador}");
+}
+
+//Introdução ao WHILE
+int numeroWhile = 5;
+int contadorWhile = 0;
+
+
+while(contadorWhile<=10)
+{
+    Console.WriteLine($"{numeroWhile} x {contadorWhile} = {numeroWhile * contadorWhile}");
+    contadorWhile++;
+}
+
+//Interrompendo o fluxo de execução
+
+int numeroWhile2 = 5;
+int contadorWhile2 = 0;
+
+
+while(contadorWhile2<=10)
+{
+    Console.WriteLine($"{numeroWhile2} x {contadorWhile2} = {numeroWhile2 * contadorWhile2}");
+    contadorWhile2++;
+
+    if(contadorWhile2 == 6)
+    {
+        break; //Interrompe o loop quando o contador for igual a 6
+    }
+}
+
+//Introdução ao DO WHILE
+
+int soma=0, numero2 = 0;
+
+
+do
+{
+    Console.WriteLine("Digite um número (0 para parar): ");
+    numero2 = Convert.ToInt32(Console.ReadLine());
+    soma += numero2;
+    //Console.WriteLine($"A soma dos números é: {soma}");
+
+}
+while(numero2 != 0);
+Console.WriteLine($"O total da soma é: {soma}");
