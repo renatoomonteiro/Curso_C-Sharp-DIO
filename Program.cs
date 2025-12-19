@@ -268,3 +268,49 @@ do
 }
 while(numero2 != 0);
 Console.WriteLine($"O total da soma é: {soma}");
+
+//Construindo um menu interativo
+
+string opcao = "";
+
+while (true)
+{
+    //Console.Clear();
+    Console.WriteLine("\nDigite uma opção:");
+    Console.WriteLine("1 - Cadastrar cliente");
+    Console.WriteLine("2 - Buscar cliente");
+    Console.WriteLine("3 - Apagar cliente");
+    Console.WriteLine("4 - Listar clientes");
+    Console.WriteLine("0 - Sair");
+
+    opcao = Console.ReadLine();
+
+    // if (opcao == "0")
+    // {
+    //     break;
+    // }
+
+    switch (opcao)
+    {
+        case "1":
+            Console.WriteLine("Cadastro de cliente");
+            break;
+        case "2":
+            Console.WriteLine("Busca de cliente");
+            break;
+        case "3":
+            Console.WriteLine("Apagar cliente");
+            break;
+        case "4":
+            Console.WriteLine("Listar clientes");
+            break;
+        case "0":
+            Console.WriteLine("Saindo...");
+            Environment.Exit(0);
+            break;            
+        
+        default:
+            Console.WriteLine("Opção inválida, tente novamente.");
+            break;
+    }
+}
