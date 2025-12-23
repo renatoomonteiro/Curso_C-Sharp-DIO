@@ -5,6 +5,8 @@
 using System.Runtime.CompilerServices;
 using Curso_C_SHARP_DIO.Models;
 
+
+
 Pessoa p = new Pessoa();
 p.Nome = "João";
 p.Idade = 25;
@@ -220,10 +222,99 @@ int numeroFor = 10;
 
 //Console.WriteLine($"{numeroFor} x 1 = {numeroFor * 1}");
 
+//Implementando um array de inteiros
+
+int[] arrayInteiros = new int[3];
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+//arrayInteiros[3] = 85; //Erro de índice fora do intervalo
+
+
+
+Console.WriteLine("\nExibindo os valores do array de inteiros:");
+Console.WriteLine("Percorrendo o array utilizando o FOR");
+for(int indice = 0; indice < arrayInteiros.Length; indice++)
+{
+    Console.WriteLine($"Posição N° {indice} : {arrayInteiros[indice]}");
+}   
+
+
+//Percorrendo um array com FOREACH
+Console.WriteLine("Percorrendo o array com FOREACH");
+foreach(int item in arrayInteiros)
+{
+    Console.WriteLine($"Valor do item: {item}");
+}
+
+//Percorrendo o array com FOREACH utilzando um contador
+Console.WriteLine("Percorrendo o array com FOREACH utilizando um contador");
+int contadorForeach = 0;
+foreach(int valor in arrayInteiros)
+{
+    Console.WriteLine($"Posição N° {contadorForeach} - {valor}");
+    contadorForeach++;
+}
+
+int[] arrayInteiros2 = new int[4];
+
+arrayInteiros2[0] = 72;
+arrayInteiros2[1] = 64;
+arrayInteiros2[2] = 50;
+arrayInteiros2[3] = 85; //Erro de índice fora do intervalo
+
+int[] arrayInteirosDobrado = new int[arrayInteiros2.Length * 2];
+Array.Copy(arrayInteiros2, arrayInteirosDobrado, arrayInteiros2.Length);
+
+Console.WriteLine("Percorrendo o Array com o FOR");
+for(int contador = 0; contador < arrayInteirosDobrado.Length; contador++)
+{
+    Console.WriteLine($"Posição N° {contador} : {arrayInteirosDobrado[contador]}");
+}
+
+//Trabalhando com listas
+List<string> listaString = new List<string>();
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+
+
+//Percorrendo uma lista com FOR
+Console.WriteLine("\nPercorrendo a lista com FOR");
+for(int contador = 0; contador < listaString.Count; contador++)
+{
+    Console.WriteLine($"Posição N° {contador} : {listaString[contador]}");
+}
+
+
+//Percorrendo uma lista com FOREACH
+Console.WriteLine("Percorrendo a lista com FOREACH");
+
+int contadorForeach2 = 0;
+foreach(string estado in listaString)
+{
+    Console.WriteLine($"Posição N° {contadorForeach2} : {estado}");
+    contadorForeach2++;
+}
+
+listaString.Add("SC");
+
+
+Console.WriteLine("\nTabuada do 10:");
 for(int contador = 0; contador <= 10; contador++)
 {
     Console.WriteLine($"{numeroFor} x {contador} = {numeroFor * contador}");
 }
+
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade {listaString.Capacity}");
+
+Console.WriteLine("Removendo o item 'BA' da lista");
+
+listaString.Remove("BA");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade {listaString.Capacity}");
 
 //Introdução ao WHILE
 int numeroWhile = 5;
@@ -314,3 +405,5 @@ while (true)
             break;
     }
 }
+
+
